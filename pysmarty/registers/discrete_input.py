@@ -12,7 +12,6 @@ class DiscreteInput(BaseRegister):
     def update_state(self):
         """Read Register."""
         res = self._connection.client.read_discrete_inputs(
-            self.addr, unit=self._connection.slave)
+            self.addr, slave=self._connection.slave)
         if not res.isError():
             self.state = res.bits[0]
-

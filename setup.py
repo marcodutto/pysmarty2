@@ -7,14 +7,14 @@ with open("README.md", "r") as fh:
     LONG_DESCRIPTION = fh.read()
 
 setuptools.setup(
-    name="pysmarty",
-    version="0.7",
-    author="Theo Nicolau",
-    author_email="theo.nicolau@gmail.com",
+    name="pysmarty2",
+    version="0.9",
+    author="Martins Sipenko, Theo Nicolaum",
+    author_email="martins.sipenko@gmail.com",
     description="Python API for Salda Smarty Modbus TCP",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
-    url="https://github.com/z0mbieprocess/pysmarty",
+    url="https://github.com/martinssipenko/pysmarty2",
     packages=setuptools.find_packages(),
     include_package_data=True,
     install_requires=list(val.strip() for val in open('requirements.txt')),

@@ -1,6 +1,6 @@
 """Modbus Client."""
 
-from pymodbus.client.sync import ModbusTcpClient
+from pymodbus.client import ModbusTcpClient
 
 
 class Connection:
@@ -34,5 +34,7 @@ class Connection:
         return self._slave
 
     def is_connected(self):
-        """Return connection state."""
-        return self._client.connect()
+        """Return connection state. Attempt to connect if not already connected."""
+        if not self._client.is_socket_open():
+            self._client.connect()
+        return self._client.is_socket_open()
