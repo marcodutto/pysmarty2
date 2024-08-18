@@ -1,4 +1,4 @@
-"""Setup for pysmarty package."""
+"""Setup for pysmarty2 package."""
 
 import setuptools
 
@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pysmarty2",
-    version="0.9",
+    version="0.10",
     author="Martins Sipenko, Theo Nicolaum",
     author_email="martins.sipenko@gmail.com",
     description="Python API for Salda Smarty Modbus TCP",

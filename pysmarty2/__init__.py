@@ -1,7 +1,7 @@
-"""PySmarty init."""
+"""PySmarty2 init."""
 from .smarty import Smarty
 
-name = "pysmarty"
+name = "pysmarty2"
 
 __all__ = [
         'Smarty'
