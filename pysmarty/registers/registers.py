@@ -61,7 +61,7 @@ class Registers:
         """Update all registers."""
         return (self._update_holding_registers() and
                 self._update_coils() and
-                self._update_input_registers() and
+                self._update_discrete_inputs() and
                 self._update_input_registers())
 
     def _update_holding_registers(self) -> bool:
